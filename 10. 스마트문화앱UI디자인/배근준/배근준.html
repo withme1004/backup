@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        *{margin: 0;padding: 0;}
+       ul{list-style: none;}
+    .wrap{width: 100%;max-width: 1903px;}
+    .menu{width: 90%;margin: 0 auto;}
+    .menu>p{text-align: center;color: #555;margin: 50px 0 10px 0;font-weight: bold;}
+    .menu h1{text-align: center;color: #555;}
+    .wrap h2{text-align: center;margin: 50px 0;font-size: 25px;}
+    .wrap ul{width: 100%;display: flex;width: 679px;margin: 0 auto;height: 200px;gap:20px;}
+    .wrap ul li{width: 200px; text-align: center;border-radius: 50%;align-content: center;color: #fff;position: relative;word-break: keep-all;line-height: 25px;justify-content: space-between;}
+    .wrap ul li p:nth-child(2)::after{content: "";width: 40px;height: 1px;background: #777;position: absolute;top: 45%;left: 50%;transform: translateX(-50%);z-index: 1;}
+    .wrap ul li h3{margin-bottom: 15px;}
+    .wrap ul li:first-child{background: #000;border: 1px solid #000;}
+    .wrap ul li:nth-child(3){background: #434343;border: 1px solid #434343}
+    .wrap ul li:last-child{background: #7d7d7d;border: 1px solid #7d7d7d;}
+    .wrap ul li:nth-child(2),.wrap ul li:nth-child(4){width: 20px;height: 20px;position: relative;top: 50%;}
+    @media screen and (max-width:960px) {
+        .menu{width: 80%;}
+        .wrap ul{width: 736px;}
+        .wrap h2{font-size: 16px;}
+    }
+    @media screen and (max-width:640px) {
+        .menu{width: 80%;}
+        
+ 
+       
+</style>
+</head>
+<body>
+<div class="wrap">
+ <div class="menu">
+     <h2>사회적 책임경영의 가치체계</h2>
+     <ul>
+        <li>
+            <h3>경영이념</h3>
+            <p>사회적 책임을 근간으로 하는 경영이념</p>
+        </li>
+        <li><img src="images/Asset 1.svg" alt="화살표"> </li>
+        <li>
+            <h3>신세계의 길</h3>
+            <p>사회적 책임을 실천하는 신념 및 방향</p>
+        </li>
+        <li><img src="images/Asset 1.svg" alt="화살표"> </li>
+        <li>
+            <h3>신세계 Credo</h3>
+            <p>이해 관계자들의 사회적 책임경영 실천강령</p>
+        </li>
+     </ul>
+     <p>경영이념</p>
+     <h1>"고객의 불만에서 기회를 찾고 관습을 타파하며 <br>지속적으로 성장하는 혁신 기업"</h1>
+ </div>
+</div>
+</body>
+</html>

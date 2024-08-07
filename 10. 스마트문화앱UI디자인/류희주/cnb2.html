@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cnb2</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        @font-face {
+            font-family: NanumBarunGothic;
+            src: url(./webfont/NanumBarunGothic.otf) format("opentype");
+        }
+        body{
+            overflow-x: hidden;
+        }
+        ul{list-style: none;}
+        a{text-decoration: none; color: #444;}
+        #wrap h4{
+            font-size: 22px;
+            display: none;
+        }
+        #wrap>p{
+            font-family: NanumBarunGothic;
+            width: 100%;
+            text-align: center;
+            margin: 70px 0;
+            font-size: 34px;
+        }
+        #wrap ul {
+            width:100%;
+            max-width:940px;
+            display: flex;
+            justify-content: space-between;
+            height: 424px;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        #wrap ul li{
+            width: 33%;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        #wrap ul li:nth-child(1){
+            background-image: url(./images/bg_info_1.jpg);
+            background-position: center;
+        }
+        #wrap ul li:nth-child(2){
+            background-image: url(./images/bg_info_2.jpg);
+            background-position: center;
+        }
+        #wrap ul li:nth-child(3){
+            background-image: url(./images/bg_info_3.jpg);
+            background-position: center;
+        }
+        #wrap ul li::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .6);
+        }
+        #wrap ul li:hover:after{
+            background: rgba(0, 0, 0, .76);
+        }
+        #wrap ul li a{
+            position: absolute;
+            color: #fff;
+            z-index: 1;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        #wrap ul li a h2{
+            font-size: 30px;
+        }
+        #wrap ul li:hover a h2{
+            color: #f29b76;
+        }
+        #wrap ul li a p{
+            padding-top: 16px;
+            font-size: 15px;
+            letter-spacing: -1px;
+        }
+        #wrap .orangebox{
+            background: #c76f53;
+            margin: 10px auto;
+            width:100%;
+            max-width:940px;
+            height: 180px;
+            text-align: center;
+            color: #fff;
+        }
+        #wrap .orangebox h3{
+            margin: 0 auto;
+            font-size: 30px;
+            line-height: 39px;
+            /* position: relative; */
+        }
+        #wrap .orangebox:before{
+            content: "";
+            display: inline-block;
+            position: relative;
+            top: 70px;
+            left: -200px;
+            width: 79px;
+            height: 44px;
+            background-image: url(./images/ico_management_sprits.png);
+            background-repeat: no-repeat;
+        }
+        #wrap .orangebox:after{
+            content: "";
+            display: inline-block;
+            position: relative;
+            bottom: 65px;
+            left: 200px;
+            width: 32px;
+            height: 32px;
+            background-image: url(./images/ico_management_sprits.png);
+            background-repeat: no-repeat;
+            background-position: -158px 0;
+        }
+        #wrap .orangebox p{
+            font-size: 15px;
+            padding-top: 16px;
+        }
+
+        /* 이하 반응형 */
+        @media screen and (max-width:960px){
+            br{
+                display: none;
+            }
+            #wrap{
+                padding: 0 10px;
+            }
+            #wrap>p{
+                font-size: 18px;
+                text-align: left;
+                margin: 30px 0;
+            }
+            #wrap ul{
+                height: 370px;
+            }
+            #wrap ul > li{
+                margin: 0 auto;
+                width: 100%;
+                height: 120px;
+            }
+            #wrap ul li a h2{
+            font-size: 16px;
+            }
+            #wrap ul li a p{
+            font-size: 12px;
+            }
+            #wrap .orangebox{
+                width: 100%;
+                height: 95px;
+            }
+            #wrap .orangebox h3{
+                line-height: 0px;
+                font-size: 16px;
+            }
+            #wrap .orangebox p{
+                font-size: 12px;
+            }
+            #wrap .orangebox:before{
+                top: 35px;
+                left: -40%;
+                width: 47px;
+                height: 30px;
+                background-size: 130px 38px;
+                background-position: 0 0;
+            }
+            #wrap .orangebox:after{
+                bottom: 30px;
+                left: 43%;
+                width: 22px;
+                height: 22px;
+                background-size: 130px 38px;
+                background-position: -108px 0;
+            }
+        }
+        @media screen and (max-width:640px){
+            #wrap h4{
+                color: #444;
+                margin-top: 30px;
+                display: block;
+                letter-spacing: -1px;
+            }
+            #wrap>p{
+                font-size: 14px;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h4>경영정보</h4>
+        <p>명확한 비전과 전략으로 최고의 투자 가치를 실현하는 신세계푸드</p>
+        <ul>
+            <li>
+                <a href="#">
+                    <h2>경영정보</h2>
+                    <p>주주 및 이사회 구성을<br>안내해 드립니다.</p>                    
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h2>재무정보</h2>
+                    <p>영업현황 및 재무제표를<br>안내해 드립니다.</p>                    
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h2>주식정보</h2>
+                    <p>주가정보를<br>안내해 드립니다.</p>                    
+                </a>
+            </li>
+        </ul>
+        <div class="orangebox">
+            <h3>공시 및 공고</h3>
+            <p>결산 공고 및 주주총회 결과를<br>
+                안내해 드립니다.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @font-face {
+      font-family: preM;
+      src: url(webfonts/Pretendard-Medium.woff) format("woff");
+    }
+    *{margin: 0; padding: 0; font-family: preM;}
+    #wrap{display: grid; max-width: 1140px; width: 90%; height: 907px; margin: 50px auto;
+      grid-template-columns: 503px 110px 526px 106px; grid-template-rows: 138px 253px 100px 100px 329px;}
+    #wrap div{background-size: cover; width: 100px; height: 100%; border-radius: 20px;
+      position: relative; overflow: hidden; }
+    #wrap div a{display: block; position: absolute; top: 45px; right: 40px;}
+    #wrap div h1{font-size: 36px; padding: 45px 0 0 45px; color: #fff; position: relative; 
+      z-index: 1;}
+    #wrap div p{font-size: 24px; padding: 40px 40px; color: #fff; letter-spacing: -1px;
+      position: relative; z-index: 1; opacity: 0; font-weight: normal;}
+    #wrap div:hover p{opacity: 1;}
+    #wrap .con1{background-image: url(CNB-images/energy_1.jpg); max-width: 503px; height: 513px;
+      grid-row: 2 / 5; width: 100%; height: 100%; transition: 0.5s;}
+    #wrap .con1:hover:after{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 40%);
+      transition: 0.4s;
+      opacity: 0.7;
+    }
+    #wrap .con1:hover{
+      background-image: url(CNB-images/energy_1_hover.jpg);
+    }
+    #wrap .con2{background-image: url(CNB-images/energy_2.jpg); max-width: 526px; height: 391px;
+      grid-column: 3; grid-row: 1 / span 2; width: 100%; height: 100%; transition: 0.4s;}
+    #wrap .con2:hover:after{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 40%);
+      transition: 0.4s;
+      opacity: 0.7;
+    }
+    #wrap .con2:hover{
+      background-image: url(CNB-images/energy_2_hover.jpg);
+    }
+    #wrap .con3{background-image: url(CNB-images/energy_3.jpg); max-width: 420px; height: 429px;
+      grid-column: 3; grid-row: 4 / 6; width: 100%; height: 100%; transition: 0.4s;}
+    #wrap .con3:hover:after{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 40%);
+      transition: 0.4s;
+      opacity: 0.7;
+    }
+    #wrap .con3:hover{
+      background-image: url(CNB-images/energy_3_hover.jpg);
+    }
+    #wrap div:hover a img{content: url(CNB-images/arrow_large_hover.svg); position: relative; z-index: 1;}
+
+    @media screen and (max-width: 1280px) {
+      #wrap{max-width: 1229px; width: 90%; display: flex; flex-direction: column; gap: 20px;}
+      #wrap div{max-width: 1161px; width: 100%; height: 327px;}
+      #wrap .con1{max-width: none; background-position: center;}
+      #wrap .con1:after{background-position: center;}
+      #wrap .con2{max-width: none; background-position: center;}
+      #wrap .con2:after{background-position: center;}
+      #wrap .con3{max-width: none; background-position: center;}
+      #wrap .con3:after{background-position: center;}
+      #wrap div h1{font-size: 30px;}
+      #wrap div p{font-size: 18px;}
+    }
+    @media screen and (max-width: 768px) {
+      #wrap div h1{font-size: 22px; padding: 26px 0 0 26px;}
+      #wrap div p{font-size: 16px; padding: 26px 26px;}
+      #wrap div a{top: 25px; right: 20px;}
+      #wrap div a img{width: 40px; height: 40px;}
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div class="con1">
+      <a href="#"><img src="CNB-images/arrow_large.svg" alt="arrow"></a>
+      <h1>천연가스</h1>
+      <p>GS EPS는 국내 최초의 LNG발전사업자로서 청정연료를 이용한 LNG발전을 통해 친환경 전력 생산에 앞장서고 있습니다.</p>
+    </div>
+    <div class="con2">
+      <a href="#"><img src="CNB-images/arrow_large.svg" alt="arrow"></a>
+      <h1>바이오매스</h1>
+      <p>GS EPS는 아시아 최초의 100MW급 바이오매스 발전소를 건설하여, 현재 총 210MW 규모의 바이오매스 발전소를 운영하고 있습니다.</p>
+    </div>
+    <div class="con3">
+      <a href="#"><img src="CNB-images/arrow_large.svg" alt="arrow"></a>
+      <h1>태양광</h1>
+      <p>GS EPS는 건물 옥상 및 유휴부지를 활용한 태양광 발전소를 당진 발전소 내에서 운영하고 있습니다.</p>
+    </div>
+  </div>
+</body>
+</html>

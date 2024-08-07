@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cnb1</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        @font-face {
+            font-family: NanumBarunGothic;
+            src: url(./webfont/NanumBarunGothic.otf) format("opentype");
+        }
+        ul{list-style: none;}
+        a{text-decoration: none;color: #333;}
+        body{
+            overflow-x: hidden;
+        }
+        #wrap{
+            padding: 80px 15px;
+            width: 100%;
+            margin: 0 auto;
+            background: linear-gradient(to bottom, #fff 810px, #f5f4f3 810px 1270px, #fff 1270px 1671px, #f5f4f3 1671px 2178px, #fff 2178px 100%);
+        }
+        #wrap h2{
+            font-family: NanumBarunGothic;
+            text-align: center;
+            font-size: 40px;
+            padding-bottom: 49px;
+        }
+        #wrap h2::after{
+            content: "";
+            display: block;
+            width: 121px;
+            height: 4px;
+            background: #000;
+            left: 50%;
+            bottom: -49px;
+            transform: translateX(-50%);
+            position: relative;
+        }
+        #wrap p{
+            font-family: NanumBarunGothic;
+            color: #444;
+            line-height: 1.8;
+            text-align: center;
+            font-size: 22px;
+            margin: 45px 0 0;
+            word-break: keep-all;
+        }
+        #wrap ul{
+            width:1280px;
+            margin: 120px auto;
+            display: flex;
+            flex-wrap: wrap;
+            /* margin:  130px 210px 0; */
+            gap: 40px;
+        }
+        #wrap ul li{
+            width: calc(50% - 20px);
+            height: 400px;
+        }
+        #wrap ul li a img{
+            border-radius: 40px;
+        }
+        @media screen and (max-width:960px){
+            br{
+                display: none;
+            }
+            #wrap{
+            width: 100%;
+            margin: 0 auto;
+            padding: 50px 15px;
+            box-sizing: border-box;
+            background:none;
+            }
+            #wrap h2{
+                font-size: 20px;
+                padding-bottom: 0px;
+            }
+            #wrap h2::after{
+                display: none;
+            }
+            #wrap p{
+                font-size: 15px;
+            }
+            #wrap ul{
+                margin: 40px 0 0;
+                width: 100%;
+                gap: 10px;
+            }
+            #wrap ul li{
+                width: calc(50% - 5px);
+                height: 100%;
+            }
+            #wrap ul li a img{
+                width: 100%;
+                border-radius: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h2>생활 속에서 함께하는<br>
+            식품 제조 선도 기업
+        </h2>
+        <p>신세계푸드는 글로벌 수준의 R&D센터와 식품 제조 인프라를 갖추고 있습니다.<br>
+            프리미엄 가정 간편식, 베이커리, Fresh Food, 대안식품 등을<br>
+            직접 연구개발 및 생산하며 식품시장을 선도해 가고 있습니다.
+        </p>
+        <ul>
+            <li>
+                <a href="#"><img src="./images/ssg_img_1.jpg" alt="img"></a>
+            </li>
+            <li>
+                <a href="#"><img src="./images/ssg_img_2.jpg" alt="img"></a>
+            </li>
+            <li>
+                <a href="#"><img src="./images/ssg_img_3.jpg" alt="img"></a>
+            </li>
+            <li>
+                <a href="#"><img src="./images/ssg_img_4.jpg" alt="img"></a>
+            </li>
+            <li>
+                <a href="#"><img src="./images/ssg_img_5.jpg" alt="img"></a>
+            </li>
+            <li>
+                <a href="#"><img src="./images/ssg_img_6.jpg" alt="img"></a>
+            </li>
+            <li>
+                <a href="#"><img src="./images/ssg_img_7.jpg" alt="img"></a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
