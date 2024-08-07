@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>우리카드평가지</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      @font-face {
+        font-family: "NotoSans";
+        src: url(/webfonts/NotoSans-Light.woff) format(woff);
+      }
+      @font-face {
+        font-family: "NotoSansr";
+        src: url(/webfonts/NotoSans-Regular.woff) format(woff);
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: #333333;
+      }
+      .wrap {
+        width: 1500px;
+        height: 500px;
+        background: #e2f3fc;
+      }
+      .wrap .service {
+        margin-left: 130px;
+      }
+      .wrap .service ul li {
+        margin: 20px;
+        text-align: center;
+        font-family: "NotoSans";
+        position: relative;
+      }
+      .wrap .service > ul > li {
+        padding: 25px;
+        float: left;
+      }
+      .wrap .service ul > li > a {
+        display: block;
+        margin: 0 auto;
+        width: 192px;
+        height: 256px;
+        overflow: hidden;
+        border-radius: 20px;
+      }
+      .wrap .service ul > li > a img {
+        transition: 0.5s;
+      }
+      .wrap .service ul > li > a:hover img {
+        transform: scale(2);
+      }
+
+      .wrap .service .sub li:first-child {
+        font-size: 25px;
+        font-family: "NotoSansr";
+        line-height: 5px;
+        color: #222222;
+      }
+      .wrap .service .sub li:nth-child(2) {
+        line-height: 20px;
+        font-size: 18px;
+      }
+
+      .wrap .service .sub div {
+        position: absolute;
+        left: 130px;
+        top: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="service">
+        <ul>
+          <li>
+            <a href="#"
+              ><img src="./images/special_mlon_1_bg.png" alt="menu" />
+            </a>
+            <ul class="sub">
+              <li><p>단기카드대출</p></li>
+              <li><p>(현금서비스)</p></li>
+              <li>
+                <p>
+                  현금이 부족할때 바로<br />찾아쓰는,<br />편리한 생활자금 마련
+                  방법
+                </p>
+              </li>
+
+              <div>
+                <a href="#"
+                  ><img src="./images/special_mlon_1_obj.png" alt=""
+                /></a>
+              </div>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#"
+              ><img src="./images/special_mlon_2_bg.png" alt="menu" />
+            </a>
+            <ul class="sub">
+              <li><p>장기카드대출</p></li>
+              <li><p>(카드론)</p></li>
+              <li>
+                <p>목돈이 필요할 때<br />복잡한 심사 과정 없이<br />간편하게</p>
+              </li>
+
+              <div>
+                <a href="#"
+                  ><img src="./images/special_mlon_2_obj.png" alt=""
+                /></a>
+              </div>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#"
+              ><img src="./images/special_mlon_3_bg.png" alt="menu" />
+            </a>
+            <ul class="sub">
+              <li><p>일부결제금액이월약정</p></li>
+              <li><p>(라볼빙)</p></li>
+              <li>
+                <p>
+                  원하는 만큼만 결제하고 매월<br />결제금액을 계획적으로 관리
+                  방법
+                </p>
+              </li>
+
+              <div>
+                <a href="#"
+                  ><img src="./images/special_mlon_3_obj.png" alt=""
+                /></a>
+              </div>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#"
+              ><img src="./images/special_mlon_4_bg.png" alt="menu" />
+            </a>
+            <ul class="sub">
+              <li><p>올인원대출</p></li>
+              <li><p>(신용대출)</p></li>
+              <li>
+                <p>
+                  우리카드가 없어도 서류없이<br />방문없이 내 신용만으로 방법
+                </p>
+              </li>
+
+              <div>
+                <a href="#"
+                  ><img src="./images/special_mlon_4_obj.png" alt=""
+                /></a>
+              </div>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

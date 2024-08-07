@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+
+  <style>
+
+*{margin: 0;padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+
+@font-face {font-family: squareB;
+  src: url(webfonts/NanumSquareB.ttf) format(truetype);}
+@font-face {font-family: squareL;
+  src: url(webfonts/NanumSquareL.ttf) format(truetype);}
+
+.quickmenu{width: 1074px;height: 103px; background-color: #e2fdfe; margin: 100px auto;}
+.quickmenu .quicku{overflow: hidden;}
+.quickmenu .quick li{float: left; width: 179px; text-align: center; padding: 12px 0 14px; position: relative; }
+.quickmenu .quick li:after{content: ""; position: absolute; width: 1px; height:93px; background-color: #ddd; left: 0; top: 5px;}
+.quickmenu .quick li:first-child:after{display: none;}
+.quickmenu .quick li a img{position: relative;z-index: 3;}
+.quickmenu .quick li a:first-child:after{content:""; position: absolute; width: 48px;height:48px;left: 70px; top: 12px; background-color: #ddd; border-radius: 50px; transition: 0.3s; opacity: 0;z-index: 2;}
+.quickmenu .quick li a:first-child:hover:after{opacity: 0.7; }
+
+.quickmenu .quick li a img{width: 48px; height: 48px; object-fit: cover; }
+.quickmenu .quick li span{font-family: squareL; padding-top: 7px; display: block;}
+
+.mlonmenu{width: 1400px;height: 480px; margin: 100px auto; background-color: rgb(226, 243, 252, 1);}
+.mlonmenu .mlon{overflow: hidden;width: 1080px; height: 100%;margin: 0 auto;}
+.mlonmenu .mlon li{width: 25%;height: 100%; padding: 25px 0 15px; float: left; text-align: center;}
+.mlonmenu .mlon li .mlonimg{width: 192px; height: 256px; position: relative; margin: 0 auto 40px;}
+.mlonmenu .mlon li .mlonimg>a{overflow: hidden; display: block; border-radius: 20px;}
+.mlonmenu .mlon li .mlonimg>a>img{transition: 0.3s;}
+.mlonmenu .mlon li .mlonimg>a>img:hover{transform: scale(1.2);}
+
+.mlonmenu .mlon li .mlonimg img:nth-child(2){position: absolute; width: 160px; height: 145px; left: 105px; top: 145px; z-index: 1;}
+.mlonmenu .mlon li .mlonimg img:nth-child(3){position: absolute; width: 160px; height: 145px; left: 105px; top: 145px;}
+.mlonmenu .mlon li .mlontitle a:first-child{font-family: squareB; font-size: 24px; font-weight: normal;display: block; }
+.mlonmenu .mlon li .mlontitle a:nth-child(2){font-family: squareL; font-size: 18px; line-height: 22px;display: block; }
+.mlonmenu .mlon li .mlontitle{margin-bottom: 25px;}
+.mlonmenu .mlon li>a{font-family: squareL; font-size: 18px;}
+
+.mbnfmenu{width: 1440px;height: 364px; overflow: hidden;margin: 100px auto;}
+.mbnfmenu .mbnf{margin: 0 auto; width: 1080px;}
+.mbnfmenu .mbnf li{width: 230px;height: 100%; float: left; padding: 0 20px; text-align: center; position: relative;}
+.mbnfmenu .mbnf li:after{content: ""; position: absolute; left: 0; top: 50%; transform: translateY(-50%);height: 169px;width: 1px;background-color: #ddd;}
+.mbnfmenu .mbnf li:first-child:after{display: none;}
+.mbnfmenu .mbnf li a:nth-child(2){width: 230px;height: 59px; font-family: squareB; font-weight: normal; font-size: 24px;display: block; }
+.mbnfmenu .mbnf li a:nth-child(3){font-family: squareL; font-size: 18px; display: block;}
+.mbnfmenu .mbnf li:first-child img{transform: translateX(-30px);}
+
+  </style>
+</head>
+<body>
+
+  <div class="quickmenu">
+<ul class="quick">
+
+<li>
+  <a href="#"><img src="images/ico_quick_menu1.png" alt="icon1"></a>
+  <a href="#"><span>이용대금명세서</span></a>
+</li>
+
+<li>
+<a href="#"><img src="images/ico_quick_menu2.png" alt="icon2"></a>
+<a href="#"><span>결제예상금액</span></a>
+</li>
+
+<li>
+  <a href="#"><img src="images/ico_quick_menu3.png" alt="icon3"></a>
+  <a href="#"><span>이용내역조회</span></a>
+</li>
+
+<li>
+  <a href="#"><img src="images/ico_quick_menu4.png" alt="icon4"></a>
+  <a href=""><a href="#"><span>내정보변경</span></a></a>
+</li>
+
+<li>
+  <a href="#"><img src="images/ico_quick_menu5.png" alt="icon5"></a>
+  <a href="#"><span>카드분실신고</span></a>
+</li>
+
+<li>
+  <a href="#"><img src="images/ico_quick_menu6.png" alt="icon5"></a>
+  <a href="#"><span>카드사용등록</span></a>
+</li>
+
+</ul>
+  </div>
+
+<div class="mlonmenu">
+  <ul class="mlon">
+
+    <li>
+      <div class="mlonimg">
+        <a href="#"><img src="images/special_mlon_1_bg.png" alt="m1"></a>
+        <img src="images/special_mlon_1_obj (1).png" alt="m1">
+        <img src="images/special_mlon_1_shd.png" alt="m1">
+      </div>
+      <div class="mlontitle">
+        <a href="#"><span>단기카드대출</span></a>
+        <a href="#"><span>(현금서비스)</span></a>
+      </div>
+      <a href="#"><span>현금이 급할 때 바로<br>찾아쓰는,<br>편리한 생활자금 마련방법</span></a>
+    </li>
+
+    <li>
+      <div class="mlonimg">
+        <a href="#"><img src="images/special_mlon_2_bg.png" alt="m2"></a>
+        <img src="images/special_mlon_2_obj.png" alt="m2">
+        <img src="images/special_mlon_2_shd.png" alt="m2">
+      </div>
+      <div class="mlontitle">
+        <a href="#"><span>장기카드대출</span></a>
+        <a href="#"><span>(카드론)</span></a>
+      </div>
+      <a href="#"><span>목돈이 필요할 때<br>복잡한 심사 과정 없이<br>간편하게</span></a>
+    </li>
+
+    <li>
+      <div class="mlonimg">
+        <a href="#"><img src="images/special_mlon_3_bg.png" alt="m3"></a>
+        <img src="images/special_mlon_3_obj.png" alt="m3">
+        <img src="images/special_mlon_3_shd.png" alt="m3">
+      </div>
+      <div class="mlontitle">
+        <a href="#"><span>일부결제금액이월약정</span></a>
+        <a href="#"><span>(리볼빙)</span></a>
+      </div>
+      <a href="#"><span>원하는 만큼만 결제하고 매월<br>결제금액을 계획적으로 관리</span></a>
+    </li>
+
+    <li>
+      <div class="mlonimg">
+        <a href="#"><img src="images/special_mlon_4_bg.png" alt="m4"></a>
+        <img src="images/special_mlon_4_obj.png" alt="m4">
+        <img src="images/special_mlon_4_shd.png" alt="m4">
+      </div>
+      <div class="mlontitle">
+        <a href="#"><span>올인원대출</span></a>
+        <a href="#"><span>(신용대출)</span></a>
+      </div>
+      <a href="#"><span>우리카드가 없어도 서류없이,<br>방문없이, 내 신용만으로</span></a>
+    </li>
+
+
+  </ul>
+
+</div>
+
+<div class="mbnfmenu">
+  <ul class="mbnf">
+
+    <li>
+      <a href="#"><img src="images/special_mbnf_1_obj.png" alt="mbnf1"></a>
+      <a href="#"><span>해외이용의 정석</span></a>
+      <a href="#"><span>여행, 직구, 항공<br>무엇이든 우리카드로</span></a>
+    </li>
+
+    <li>
+      <a href="#"><img src="images/special_mbnf_2_obj.png" alt="mbnf2"></a>
+      <a href="#"><span>MY Pick 서비스</span></a>
+      <a href="#"><span>혜택도 맞춤!<br>나만을 위한 맞춤 혜택</span></a>
+    </li>
+
+    <li>
+      <a href="#"><img src="images//special_mbnf_3_obj.png" alt="mbnf3"></a>
+      <a href="#"><span>우리V클럽</span></a>
+      <a href="#"><span>특별함을 원하는<br>고객을 위한 VIP우대 혜택</span></a>
+    </li>
+
+    <li>
+      <a href="#"><img src="images/special_mbnf_4_obj.png" alt="mbnf4"></a>
+      <a href="#"><span>우리 Point</span></a>
+      <a href="#"><span>차곡차곡 쌓아<br>다양한 곳에서 사용가능</span></a>
+    </li>
+
+  </ul>
+
+</div>
+
+  
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="Ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+ul{list-style: none;}
+.wrap{width: 1280px;margin: 0 auto ;}
+.menu{width: 1080px;height: 93px;margin: 0 auto ;;overflow: hidden;background-color: #e2fdfe;position: relative;top: 30px;}
+.menu .con{line-height:30px;text-align: center;margin-left: 70px;margin-top: 5px;position: relative;}
+.menu>ul{overflow: hidden;}
+.menu>ul> li{position: relative;float: left;}
+.menu>ul> li:after{content: "";width: 1px;height: 80px;background-color: #ccc;top: 10px;right: -30px;position: absolute;}
+.menu>ul >li:last-child::after{width: 0;}
+
+.mid{width: 1080px;margin: 0 auto;margin-top: 50px;background-color: #E2F3FC;border: 1px solid #fff;}
+.mid >ul{overflow: hidden;}
+.mid >ul li{float: left;width: 215px;height: 460px;margin-left: 35px;}
+.mid .fr{position: absolute;margin-left: 100px;margin-top: 140px;z-index: 2;}
+.mid .shd{position: absolute;margin-left: 100px;margin-top: 140px;z-index: 1;}
+.mid .text{position: absolute; text-align: center;top: 420px;margin-left: 20px;}
+h2{margin: 30px 0;}
+h2 span{font-weight: normal;}
+
+.bottom{width: 1080px;margin: 0 auto;border: 1px solid #fff;}
+.bottom>ul{overflow: hidden;}
+.bottom>ul>li{height: 800px;text-align: center;float: left;margin-left: 70px;position: relative;}
+.bottom>ul>li:first-child{margin-left: 0;}
+.bottom>ul>li::after{content: "";width: 1px;height: 100px;background-color: #ccc; position: absolute;top: 150px;left: -40px;}
+.bottom>ul>li:first-child::after{width: 0;}
+
+.last{position: relative;}
+.lastp1{width: 310px;}
+.lastp2{width: 160px;}
+.lastp3{width: 188px;}
+.lastp4{width: 174px;}
+.lasttxt1{position: absolute;left: 90px;top: 190px;}
+.lasttxt2{position: absolute;left: -20px;top: 190px;}
+.lasttxt3{position: absolute;left: 0px;top: 190px;}
+.lasttxt4{position: absolute;left: 0px;top: 190px;}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="menu">
+            <ul>
+                <li>
+                    <ul class="con">
+                        <li><a href="#"><img src="images/ico_quick_menu1.png" alt=""></a></li>
+                        <li>이용대금명세서</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="con">
+                        <li><a href="#"><img src="images/ico_quick_menu2.png" alt=""></a></li>
+                        <li>결제예상금액</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="con">
+                        <li><a href="#"><img src="images/ico_quick_menu3.png" alt=""></a></li>
+                        <li>이용내역조회</li>
+                    </ul class="con">
+                </li>
+                <li>
+                    <ul class="con">
+                        <li><a href="#"><img src="images/ico_quick_menu4.png" alt=""></a></li>
+                        <li>내정보변경</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="con">
+                        <li><a href="#"><img src="images/ico_quick_menu5.png" alt=""></a></li>
+                        <li>카드분실신고</li>
+                    </ul class="con">
+                </li>
+                <li>
+                    <ul class="con">
+                        <li><a href="#"><img src="images/ico_quick_menu6.png" alt=""></a></li>
+                        <li>카드사용등록</li>
+                    </ul class="con">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mid">
+        <ul >
+            <li>
+                <ul >
+                    <li class="bg"><img src="images/special_mlon_1_bg.png" alt="special"></li>
+                    <li class="fr"><img src="./images/special_mlon_1_obj.png" alt="obj"></li>
+                    <li class="shd"><img src="./images/special_mlon_1_shd.png" alt="shd"></li>
+                    <div class="text">
+                        <h2>단기카드대출<br><span>(현금서비스)</span></h2>
+                        <p>현금이 급할 때 바로 <br>찾아쓰는, <br>편리한 생활자금 마련방법</p>
+                    </div>
+                </ul>
+            </li>
+    <li>
+        <ul>
+            <li class="bg"><img src="images/special_mlon_2_bg.png" alt="special"></li>
+            <li class="fr"><img src="./images/special_mlon_2_obj.png" alt="obj"></li>
+            <li class="shd"><img src="./images/special_mlon_2_shd.png" alt="shd"></li>
+            <div class="text">
+                <h2>장기카드대출<br><span>(카드론)</span></h2>
+                <p>목돈이 필요할 때 <br>복장한 심사 과정 없이 <br>간편하게</p>
+            </div>
+        </ul>
+    </li>
+    <li>
+        <ul>
+            <li class="bg"><img src="images/special_mlon_3_bg.png" alt="special"></li>
+            <li class="fr"><img src="./images/special_mlon_3_obj.png" alt="obj"></li>
+            <li class="shd"><img src="./images/special_mlon_3_shd.png" alt="shd"></li>
+            <div class="text">
+                <h2>일부결제금액이월약정<br><span>(리볼빙)</span></h2>
+                <p>원하는 만큼만 결제하고 매월 <br>결제금액을 계획적으로 관리</p>
+            </div>
+        </ul>
+    </li>
+    <li>
+        <ul>
+            <li class="bg"><img src="images/special_mlon_4_bg.png" alt="special"></li>
+            <li class="fr"><img src="./images/special_mlon_4_obj.png" alt="obj"></li>
+            <li class="shd"><img src="./images/special_mlon_4_shd.png" alt="shd"></li>
+            <div class="text">
+                <h2>올인원대출<br><span>(신용대출)</span></h2>
+                <p>우리카드가 없어도 서류없이, <br>방문없이,내 신용만으로</p>
+            </div>
+        </ul>
+    </li>
+</ul>
+    </div>
+
+    <div class="bottom">
+        <ul>
+            <li>
+                <ul class="last">
+                    <li class="lastp1"><img src="images/special_mbnf_1_obj.png" alt=""></li>
+                    
+                        <div class="lasttxt1">
+                            <h2>해외이용의 정석</h2>
+                            <li>여행직구, 항공<br>무엇이든 우리카드로</li>
+                        </div>
+                </ul>
+            </li>
+           
+            <li>
+                <ul class="last">
+                    <li class="lastp2"><img src="images/special_mbnf_2_obj.png" alt=""></li>
+                    
+                        <div class="lasttxt2">
+                            <h2>My pick 서비스</h2>
+                            <li>혜택도 맞춤!<br>나만을 위한 맞춤 혜택</li>
+                        </div>
+                </ul>
+            </li>
+            <li>
+                <ul class="last">
+                    <li class="lastp3"><img src="images/special_mbnf_3_obj.png" alt=""></li>
+                    
+                        <div class="lasttxt3">
+                            <h2>우리V클럽</h2>
+                            <li>특별함을 원하는<br>고객을 위한 VIP우대 혜택</li>
+                        </div>
+                </ul>
+            </li>
+            <li>
+                <ul class="last">
+                    <li class="lastp4"><img src="images/special_mbnf_4_obj.png" alt=""></li>
+                    
+                        <div class="lasttxt4">
+                            <h2>우리 POIMT</h2>
+                            <p>차곡차곡 쌓아<br>다양한 곳에서 사용가능</p>
+                        </div>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
