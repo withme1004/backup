@@ -1,0 +1,107 @@
+@charset "utf-8";
+@font-face {
+    font-family: "YbFontMedium";
+    src: url(../webfont/YbFontMedium.woff) format("woff");
+}
+@font-face {
+    font-family: NotoSans-Bold;
+    src: url(webfonts/NotoSans-Bold.woff) format("woff");
+}
+@font-face {
+    font-family: NotoSans-Regular;
+    src: url(webfonts/NotoSans-Regular.woff) format("woff");
+}
+*{margin: 0;padding: 0;}
+ul{list-style: none;}
+.wrap{
+    width: 1480px;
+    height: 500px;
+    margin: 50px auto;
+}
+.wrap header p{
+    font-family: "YbFontMedium";
+    font-size: 36px;
+    width: 100%;
+    text-align: center;
+}
+.wrap ul{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.wrap ul li{
+    flex-basis: 15%;
+    cursor: pointer; 
+    transition: flex-basis 0.5s;
+}
+.wrap ul li div{
+    width:93%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0 auto;
+}
+.wrap ul li:first-child div{
+    background: url(../images/bg_category_1.jpg);
+    background-position: center;
+}
+.wrap ul li:nth-child(2) div{
+    background: url(../images/bg_category_2.jpg);
+    background-position: center;
+}
+.wrap ul li:nth-child(3) div{
+    background: url(../images/bg_category_4.jpg);
+    background-position: center;
+}
+.wrap ul li:nth-child(4) div{
+    background: url(../images/bg_category_5.jpg);
+    background-position: center;
+}
+.wrap ul li:nth-child(5) div{
+    background: url(../images/bg_category_6.jpg);
+    background-position: center;
+}
+.wrap ul li:nth-child(6) div{
+    background: url(../images/bg_category_3.jpg);
+    background-position: center;
+}
+.wrap ul li:nth-child(7) div{
+    background: url(../images/bg_category_7.jpg);
+    background-position: center;
+}
+.wrap ul li:nth-child(8) div{
+    background: url(../images/bg_category_8.jpg);
+    background-position: center;
+}
+.wrap ul:hover li:hover{
+    flex-basis: calc(100% - (15% *4.8));
+}
+.wrap ul:hover li:not(:hover){
+    flex-basis: 15%;
+}
+.wrap ul li p{
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 40%;
+    z-index: 2;
+}
+.wrap ul li p:first-child{
+    font-size: 24px;
+    font-weight: bold;
+}
+.wrap ul li p:last-child{
+    font-size: 16px;
+    opacity: 0;
+    transition: 0.2s;
+    transition-delay: 0.2s;
+    top: 32%;
+}
+.wrap ul li:hover p:first-child{
+    font-size: 36px;
+    top: 30%;
+}
+.wrap ul li:hover p:last-child{
+    opacity: 1;
+      
+}

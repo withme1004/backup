@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0; padding: 0;}
+    ul{list-style: none;}
+    a{text-decoration: none; color: #444; display: block;}
+    #wrap{width: 100%; height: 500px;}
+    #wrap .head{width: 1190px; height: 123px; margin: 0 auto; position: relative; z-index: 1;}
+    #wrap .head .lan{float: right;}
+    #wrap .head .lan p{float: left; margin-right: 10px; font-size: 12px; color: #444;
+      padding-top: 20px; font-weight: bold;}
+    #wrap .head .lan p:first-child{color: #444;}
+    #wrap .head .lan p:first-child::after{
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 10px;
+      background: #d4d4d4;
+      top: 24px;
+      right: 31px;
+    }
+    #wrap .head .lan p:last-child{color: #707070;}
+
+    #wrap .logo{float: left; line-height: 100px; margin-right: 50px;}
+    #wrap .logo img{vertical-align: middle;}
+    #wrap .head > ul{padding-top: 50px; box-sizing: border-box;}
+    #wrap .head > ul > li{float: left; text-align: center; width: 140px;}
+    #wrap .head > ul > li > a{font-size: 15px; font-weight: bold; text-transform: uppercase;}
+
+    #wrap .head > ul > li > ul{margin-top: 50px; display: none;}
+    #wrap .head > ul > li > ul > li{line-height: 40px;}
+    #wrap .head > ul > li > ul > li a{font-weight: normal; font-size: 14px; color: #222;}
+
+    #wrap .head > ul > li:last-child{background: #00A5B1; border-radius: 50px; padding: 5px 0;
+      position: absolute; right: 0;}
+    #wrap .head > ul > li:last-child a{color: #fff;}
+    #wrap .head > ul > li:last-child:hover a{color: #fff;}
+
+    #wrap .bg{background: #fff; width: 1920px; bottom: -280px;
+      left: -365px; opacity: 0.5;}
+
+    #wrap .head > ul > li:hover a{color: #3A466A;}
+    #wrap .head > ul > li:hover .sub{display: block; color: #3A466A;}
+    #wrap .head > ul > li ul li:hover a{text-decoration: underline; font-weight: bold;}
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div class="head">
+      <div class="lan">
+        <p>KR</p>
+        <p>EN</p>
+      </div>
+      <div class="logo"><img src="images/caffebenelogo.png" alt="caffebene"></div>
+      <ul>
+        <li>
+          <a href="#">caffebene</a>
+          <ul class="sub">
+            <li><a href="#">브랜드 스토리</a></li>
+            <li><a href="#">베네캣 스토리</a></li>
+            <li><a href="#">카페베네 원두</a></li>
+            <li><a href="#">카페베네 소식</a></li>
+            <li><a href="#">매거진</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">menu</a>
+          <ul class="sub">
+            <li><a href="#">신메뉴</a></li>
+            <li><a href="#">커피</a></li>
+            <li><a href="#">커피</a></li>
+            <li><a href="#">음료</a></li>
+            <li><a href="#">푸드</a></li>
+            <li><a href="#">MD상품</a></li>
+            <li><a href="#">Retail</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">store</a>
+          <ul class="sub">
+            <li><a href="#">국내</a></li>
+            <li><a href="#">해외</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">membership</a>
+          <ul class="sub">
+            <li><a href="#">등급&혜택</a></li>
+            <li><a href="#">가입방법안내</a></li>
+            <li><a href="#">서비스</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">global</a>
+          <ul class="sub">
+            <li><a href="#">해외매장안내</a></li>
+            <li><a href="#">해외사업소개</a></li>
+            <li><a href="#">해외가맹&유통문의</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">contents</a>
+          <ul class="sub">
+            <li><a href="#">커피</a></li>
+            <li><a href="#">우리동네</a></li>
+            <li><a href="#">사람들</a></li>
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#">매장</a></li>
+          </ul>
+        </li>
+        <li><a href="#">가맹문의</a></li>
+      </ul>
+    </div>
+    <div class="bg"></div>
+  </div>
+</body>
+</html>

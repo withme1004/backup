@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        ul{list-style: none;}
+        a{text-decoration: none;color: #010101;}
+        #wrap{}
+        #wrap header{height: 100px;}
+        #wrap header .top{width: 1080px;margin: 0 auto;}
+        #wrap .logo{float: left;width: 134px; height: 100px;position: relative;}
+        #wrap .logo a{display: block;width: 100%;height: 80px;background-image: url(images/caffebene_logo.png);background-repeat: no-repeat;background-size: 134px 85px;position: absolute;top: 50%;}
+        #wrap .menu{float: right;}
+        #wrap .top ul{float: right;}
+        #wrap .menu > ul{height: 100px;}
+        #wrap .menu > ul > li{position: relative;width: 1020px;}
+        #wrap .menu > ul > li > a{display: block;line-height: 100px;text-align: center;}
+        #wrap .menu > ul > li > a::after{content: "";position: absolute;left: 0;bottom: 0;width: 100%;height: 4px;}
+        #wrap .menu > ul > li:hover > a::after{}
+        #wrap .menu > ul .sub{height: 0;overflow: hidden;position: absolute;left: 0;top: 100px;width: 100%;z-index: 1;}
+        #wrap .menu > ul:hover .sub{height: 320px;padding: 20px 0;}
+        #wrap .menu > ul .sub li{line-height: 40px;text-align: center;}
+        #wrap .menu > ul>li:hover>a{text-decoration: underline;}
+        #wrap .menu > ul .sub li:hover a{color: darkblue;display: block;font-weight: 600;}
+        .bg{position: absolute;left: 0;top: 100px;background-color: #fff;width: 100%;height: 0;transition: 0.5s;border-top: 1px solid transparent;}
+        .back{width: 1080px;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+    <header>
+        <div class="top">
+            <ul>
+                    <li><a href="#">KR</a></li>
+                    </ul>
+                    <ul><li><a href="#">EN</a></li></ul>
+                </div>
+        <div class="logo"><a href="#"></a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">CAFFEBENE</a></li>
+                    <ul class="sub">
+                        <li><a href="#">브랜드 스토리</a></li>
+                        <li><a href="#">베네캣 스토리</a></li>
+                        <li><a href="#">카페베네 원두</a></li>
+                        <li><a href="#">카페베네 소식</a></li>
+                        <li><a href="#">매거진</a></li>
+                    </ul>
+                <ul>
+                    <li><a href="#">MENU</a></li>
+                    <ul class="sub">
+                        <li><a href="#">신메뉴</a></li>
+                        <li><a href="#">커피</a></li>
+                        <li><a href="#">음료</a></li>                       <li><a href="#">푸드</a></li>
+                        <li><a href="#">MD상품</a></li>
+                        <li><a href="#">Ritail</a></li>
+                    </ul>
+                <ul>
+                    <li><a href="#">STORE</a></li>
+                    <ul class="sub">
+                        <li><a href="#">국내</a></li>
+                        <li><a href="#">해외</a></li>
+                    </ul>
+                <ul>
+                    <li><a href="#">MEMBERSHIP</a></li>
+                    <ul class="sub">
+                        <li><a href="#">등급&혜택</a></li>
+                        <li><a href="#">가입방법안내</a></li>
+                        <li><a href="#">서비스</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                <ul>
+                    <li><a href="#">GLOBAL</a></li>
+                    <ul class="sub">
+                        <li><a href="#">해외매장안내</a></li>
+                        <li><a href="#">해외사업소개</a></li>
+                        <li><a href="#">해외가맹&유동문의</a></li>
+                    </ul>
+                <ul>
+                    <li><a href="#">CONTENTS</a></li>
+                    <ul class="sub">
+                        <li><a href="#">커피</a></li>
+                        <li><a href="#">우리동네</a></li>
+                        <li><a href="#">사람들</a></li>
+                        <li><a href="#">메뉴</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">매장</a></li>
+                    </ul>
+                <ul>
+                    <li><a href="#">가맹문의</a></li>
+                    </ul>
+                </ul>
+                <div class="bg"></div>
+            </div>
+        </header>
+        <div class="back"><img src="images/caffebene_1.png" alt=""></div>
+    </div>
+</body>
+</html>
