@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    @font-face{font-family: Pretendard;
+    src:url(https://www.bgfecomaterials.com/resources/kr/fonts/Pretendard-Medium.woff2) format(woff2);}
+    *{margin: 0;padding: 0;}
+    .solution{width: 100%;max-width: 1857px;margin: 100px auto;}
+    .title{width: 65%;margin: 0 auto;margin-bottom: 100px;}
+    .title h3{font-size: 20px;font-family: Pretendard;color: #666;}
+    .title p{font-size: 40px;font-family: Pretendard;word-break: keep-all;}
+    .content{margin: 50px 0 150px  0;}
+    .content p img{width: 1560px;}
+    
+    .Automotive>p,.Industrial>p{margin-left: 20%;}
+    .Electric>p img{object-fit: cover;}
+    .txt{width: 65%;margin: 50px auto 150px;}
+    .txt p:first-child{font-size: 70px;}
+    .txt p:last-child{font-size: 20px;}
+    .txt p:first-child img{width: 40px;height: 40px;object-fit: cover;display: none;transition: 2s;}
+    
+    .txt:hover p:first-child img{display:inline;transform: translateX(10px);}
+
+    
+    @media screen and (max-width:1023px) {
+    .title{width: 90%;}
+    .title h3{font-size: 14px;}
+    .title p{font-size: 22px;}
+    .Automotive>p,.Industrial>p{margin-left: 1%;}
+    .txt p:first-child{font-size: 32px;}
+    .txt p:last-child{font-size: 16px;}
+    .content{margin: 0 0;}
+    .txt{width: 95%;margin: 10px 0 70px 0; }
+    }
+</style>
+</head>
+<body>
+<div class="solution">
+    <div class="title">
+        <h3>솔루션별</h3>
+        <p>자동차, 전기전차, 산업재까지 다양한 분야에서 적용되고 있는 BGF에코머티리얼즈의 솔루션을 소개합니다.</p>
+        </div>
+        <div class="Automotive content">
+            <p><img src="https://www.bgfecomaterials.com/resources/kr/images/product/solution/contents_01.jpg" alt=""></p>
+            <div class="txt">
+                <p><strong>Automotive<span><img src="https://www.bgfecomaterials.com/resources/kr/images/product/materials/arrow_green.svg" alt="arrow"></span></strong></p>
+                <p>탄소저감과 지속 가능성을 고려하여 혁신적인 자동차 제품을 실현하는데 주력하고 있습니다.</p>
+            </div>
+        </div>
+        <div class="Electric content">
+            <p><img src="https://www.bgfecomaterials.com/resources/kr/images/product/solution/contents_02.jpg" alt=""></p>
+            <div class="txt">
+                <p><strong>Electric & Electronic</strong><span><img src="https://www.bgfecomaterials.com/resources/kr/images/product/materials/arrow_green.svg" alt="arrow"></span></p>
+                <p>플라스티 소재의 충격성과 전기절연, 단열성, 화학적 기능을 강화하여 제품의 신뢰성고 안전성을 향상시키는 것을 목표로 합니다.</p>
+            </div>
+        </div>
+        <div class="Industrial content">
+            <p><img src="https://www.bgfecomaterials.com/resources/kr/images/product/solution/contents_03.jpg" alt=""></p>
+            <div class="txt">
+                <p><strong>Automotive</strong><span><img src="https://www.bgfecomaterials.com/resources/kr/images/product/materials/arrow_green.svg" alt="arrow"></span></p>
+                <p>전자기기의 내부 및 외부 재료, 부품, 설비, 도구 등 다양한 산업 재료로 널리 활용됩니다.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

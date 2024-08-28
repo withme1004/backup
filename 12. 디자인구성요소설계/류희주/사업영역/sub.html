@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+        *{margin: 0;padding: 0;}
+        .top{
+            width: 100%;
+            max-width: 1200px;
+            margin: 50px auto 150px;
+        }
+        .top>p{
+            word-break: keep-all;
+            font-family: pretendard;
+            line-height: 1.4;
+        }
+        .top>p:nth-child(1){
+            font-size: 20px;
+            color: #666;
+            font-weight: 400;
+            margin-bottom: 14px;
+        }
+        .top>p:nth-child(2){
+            font-size: 40px;
+            font-weight: 500;
+            color: #000;
+            margin-bottom: 14px;
+            letter-spacing: -0.8px;
+        }
+        .cont{
+            width: 96%;
+            max-width: 1440px;
+            height: 600px;
+            background: url(https://www.bgfecomaterials.com/resources/kr/images/company/business/advanced-materials_bg_pc_img.jpg);
+            background-position: center;
+            margin: 0 auto 100px;
+            display: flex;
+            align-items: center;
+            padding: 0 120px;
+            box-sizing: border-box;
+        }
+        .cont .txt{
+            width: 100%;
+        }
+        .cont .txt p{
+            font-family: pretendard;
+            letter-spacing: -1px;
+            word-break: keep-all;
+        }
+        .cont .txt p:nth-child(1){
+            font-size: 30px;
+            color: #fff;
+            font-weight: 600;
+            line-height: 1.6;
+        }
+        .cont .txt p:nth-child(2){
+            font-size: 16px;
+            color: #fff;
+            margin-top: 20px;
+            font-weight: 500;
+            line-height: 1.6;
+        }
+        @media screen and (max-width:1366px){
+            .laptop{display: none;}
+            .top{
+            width: 96%;
+            }
+        }
+        @media screen and (max-width:1023px){
+            br{display: none;}
+            .top{
+            margin: 50px auto 50px;
+            }
+            .top>p:nth-child(1){
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 14px;
+            }
+            .top>p:nth-child(2){
+            font-size: 22px;
+            font-weight: 500;
+            margin-bottom: 14px;
+            }
+            .cont{
+                display: block;
+                position: relative;
+                padding: 0;
+            }
+            .cont .txt{
+                position: absolute;
+                top: 50px;
+                padding: 0 16px;
+                box-sizing: border-box;
+            }
+            .cont .txt p:nth-child(1){
+            font-size: 18px;
+            }
+            .cont .txt p:nth-child(2){
+            font-size: 14px;
+            }
+        }
+        @media screen and (max-width:767px){
+            .top>p:nth-child(2){
+                letter-spacing: 0;
+            }
+            .cont{
+                background: url(https://www.bgfecomaterials.com/resources/kr/images/company/business/advanced-materials_bg_m_img.jpg);
+                background-size: cover;
+            }
+            .cont .txt{
+                width: 96%;
+            }
+            .cont .txt p{
+                letter-spacing: -0.5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="top">
+            <p>사업소개</p>
+            <p>다양한 소재 솔루션으로 고객의 생활을 더 안전하고 풍요롭게 하며<br class="laptop">
+                환경에 이로운 신소재 개발로 지속 가능한 미래를 만듭니다.</p>
+        </div>
+        <div class="cont">
+            <div class="txt">
+                <p>고객의 니즈에 따라 맞춤형 엔지니어링 소재를 개발하여<br>다양한 용도별 요구 성능을 충족 시킵니다.</p>
+                <p>환경규제 강화로 인한 금속부품의 경량화, 에너지효율 증대, e-Mobility와 ESS 등 신규 Application의<br>
+                    확대로 고기능성 엔지니어링 소재의 적용처가 확대되고 있으며, 이에 따라 고객들은 보다 더 다양하고<br>
+                    정밀한 기능성을 요구하고 있습니다.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

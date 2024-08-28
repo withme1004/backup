@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+        *{margin: 0;padding: 0;}
+        br{display: none;}
+        p{word-break: keep-all;}
+        #wrap{
+            width: 100%;
+            margin: 50px auto;
+        }
+       .top{
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto 150px;
+        }
+        .top>p{
+            font-family: pretendard;
+        }
+        .top>p:nth-child(1){
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 14px;
+        }
+        .top>p:nth-child(2){
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 58px;
+            color: #000;
+        }
+        .con{
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .con>div{
+            width: 100%;
+            margin-bottom: 150px;
+        }
+        .con>div .imgbox{
+            width: 100%;
+            height: 450px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .con .cont01 .imgbox>p::before,
+        .con .cont03 .imgbox>p::before{
+            content: "";
+            top: 0;
+            left: 0;
+            display: block;
+            width: calc((100% - 1200px) / 2);
+            height: 450px;
+            background: #fff;
+            position: relative;
+        }
+        .con .cont01 .imgbox>p{
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            background-image: url(https://www.bgfecomaterials.com/resources/kr/images/product/solution/contents_01.jpg);
+            background-position-x: right;
+            background-repeat: no-repeat;
+        }
+        .con .cont02 .imgbox>p{
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            background-image: url(https://www.bgfecomaterials.com/resources/kr/images/product/solution/contents_02.jpg);
+            background-position-x: left;
+            background-repeat: no-repeat;
+        }
+        .con .cont03 .imgbox>p{
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            background-image: url(https://www.bgfecomaterials.com/resources/kr/images/product/solution/contents_03.jpg);
+            background-position-x: right;
+            background-repeat: no-repeat;
+        }
+        .con>div .txt{
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            font-family: pretendard;
+            position: relative;
+        }
+        .con>div .txt>p:nth-child(1)::after{
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: url(https://www.bgfecomaterials.com/resources/kr/images/product/materials/arrow_green.svg);
+            margin-left: 0px;
+            top: 25%;
+            transform: translateY(-25%);
+            opacity: 0;
+            transition: 0.2s;
+        }
+        .con>div .txt:hover>p:nth-child(1)::after{
+            opacity: 1;
+            margin-left: 20px;
+        }
+        .con>div .txt>p:nth-child(1){
+            font-size: 70px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .con>div .txt>p:nth-child(2){
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        @media screen and (max-width:1200px){
+            br{display: block;}
+            .top{padding: 0 24px;}
+            .con>div .txt{
+                padding: 0 24px;
+            }
+            .con .cont01 .imgbox>p,
+            .con .cont02 .imgbox>p,
+            .con .cont03 .imgbox>p{
+                background-position-x: center;
+            }
+        }
+        @media screen and (max-width:1023px){
+            br{
+                display: none;
+            }
+            .top{
+                margin-bottom: 50px;
+            }
+            .top>p:nth-child(1){
+                font-size: 14px;
+                margin-bottom: 14px;
+            }
+            .top>p:nth-child(2){
+                font-size: 22px;
+                line-height: 22px;
+            }
+            .con>div{
+                margin-bottom: 60px;
+            }
+            .con>div .imgbox{
+                margin-bottom: 25px;
+            }
+            .con>div .txt>p:nth-child(1){
+                font-size: 32px;
+                margin-bottom: 10px;
+            }
+            .con>div .txt>p:nth-child(2){
+                font-size: 16px;
+            }
+            .con>div .txt:hover>p:nth-child(1)::after{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="top">
+            <p>솔루션별</p>
+            <p>자동차, 전기전자, 산업재까지 다양한 분야에서 적용되고 있는<br class="laptop">
+                BGF에코머티리얼즈의 솔루션을 소개합니다.</p>
+        </div>
+        <div class="con">
+            <div class="cont01">
+                <div class="imgbox">
+                    <p></p>
+                </div>
+                <div class="txt">
+                    <p>Automotive</p>
+                    <p>탄소저감과 지속 가능성을 고려하여 혁신적인 자동차 제품을 실현하는데 주력하고 있습니다.</p>
+                </div>
+            </div>
+            <div class="cont02">
+                <div class="imgbox">
+                    <p></p>
+                </div>
+                <div class="txt">
+                    <p>Electric &  Electronic</p>
+                    <p>플라스틱 소재의 내충격성과 전기절연, 단열성, 화학적 기능을 강화하여 제품의 신뢰성과 안전성을 향상시키는 것을 목표로 합니다.</p>
+                </div>
+            </div>
+            <div class="cont03">
+                <div class="imgbox">
+                    <p></p>
+                </div>
+                <div class="txt">
+                    <p>Industrial</p>
+                    <p>전자기기의 내부 및 외부 재료, 부품, 설비, 도구 등 다양한 산업 재료로 널리 활용됩니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

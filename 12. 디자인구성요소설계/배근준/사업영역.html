@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    @font-face{font-family: Pretendard;
+    src:url(https://www.bgfecomaterials.com/resources/kr/fonts/Pretendard-Medium.woff2) format(woff2);}
+    *{margin: 0;padding: 0;}
+    .eco{width: 80%; max-width: 1857px;margin: 100px auto;font-weight:500;font-family: Pretendard;}
+    .title{width: 85%;margin: 0 auto;line-height: 50px;}
+    .title h3{width: 100%;color: #666;font-size: 20px;}
+    .title h1{width: 100%;font-size: 40px;line-height: 60px;font-weight:500;}
+    .desc{margin-top: 120px;position: relative;}
+    .desc p img{width: 100%;height: 100%;object-fit: cover;}
+    .txt{position: absolute;top: 50%;left: 10px;transform: translateY(-50%);color: #fff;width: 100%;}
+    .txt h2{font-size: 30px;margin-bottom: 30px;}
+    .txt p{font-size: 16px;line-height: 25px;}
+    .txt p .none{display: none;}
+    
+    @media screen and (max-width:1456px) {
+        .eco{width: 95%;}
+        .title{width: 95%;
+    }
+    @media screen and (max-width:1030px) {
+        .eco{width: 90%;}
+        .title{width: 100%;}
+    }
+    @media screen and (max-width:1024px) {
+        .eco{width: 90%;}
+        .title{width: 100%;}
+        .title h3{font-size: 14px;}
+        .title h1{font-size: 22px;line-height: 30px;}
+        .title h1 br{display: none;}
+        .desc{margin-top: 50px;}
+        .txt{position: absolute;top: 50%;left: 3%;transform: translateY(-50%);color: #fff;}
+        .txt h2{font-size: 18px;}
+        .txt h2 br{display: none;}
+        .txt p{font-size: 14px;line-height: 20px;}
+        .txt p br{display: none;}
+        .txt p .none{display:block;}
+    }
+</style>
+</head>
+<body>
+    <div class="eco">
+        <div class="title">
+            <h3>사업소개</h3>
+            <h1>다양한 소재 솔루션으로 고객의 생활을 더 안전하고 풍요롭게 하며 <br>
+                환경에 이로운 신소재 개발로 지속 가능한 미래를 만듭니다.</h1>
+        </div>
+        <div class="desc">
+            <p><img src="https://www.bgfecomaterials.com/resources/kr/images/company/business/advanced-materials_bg_pc_img.jpg" alt="photo"></p>
+            <div class="txt">
+                <h2>
+                    고객의 니즈에 따라 맞춤형 엔지니어링 소재를 개발하여<br> 다양한 용도별 요구 성능을 충족 시킵니다.</h2>
+                    <p>
+                        환경규제 강화로 인한 금속부품의 경량화, 에너지효율 증대, e-Mobility와 ESS 등 신규 Application의  <br>확대로 고기능성 엔지니어링 소재의 적용처가 확대되고 있으며, 이에 따라<br class="none"> 고객들은 보다 더 다양하고  <br>정밀한 기능성을 요구하고 있습니다. 
+                    </p>
+                    
+            </div>
+        </div>
+    </div>
+</body>
+</html>
