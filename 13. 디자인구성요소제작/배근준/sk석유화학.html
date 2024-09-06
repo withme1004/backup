@@ -1,0 +1,115 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+   *{margin: 0;padding: 0;}
+
+   ul{list-style: none;}
+   a{text-decoration: none;}
+   .wrap{;background:#ddefc8;display: block;width: 1690px;height: 865px;}
+   
+   .content{width: 100%;height: 100%;position: relative;}
+   .content li{left: 50%;top: 80px;transform: translateX(-50%); width: 700px;height: 360px;display: flex;align-items: center;justify-content: center;text-align: center;opacity: 0;transition: 0.5s;background-repeat: no-repeat;background-size: cover;background-size: cover;background-repeat: no-repeat;background-position: center;height: 342px;margin: 0 auto;position: absolute;}
+   .content li.on{opacity: 1;}
+   .content li div{position:absolute;bottom: -150px;}
+   .content li:first-child div h1:{color: #009a93;font-size: 68px;}
+   .content li:first-child div p:{color: #555;font-size: 22px;}
+   .content li:nth-child(2) div h1:{color: #0072c6;font-size: 68px;}
+   .content li:nth-child(2) div p:{color: #555;font-size: 22px;}
+   .content li:nth-child(3) div h1:{color: #16873e;font-size: 68px;}
+   .content li:nth-child(3) div p:{color: #555;font-size: 22px;}
+   .content li div p{position: relative;top: 20px;opacity: 0;transition: 1s;}
+   .content li div p{transition-delay: 0.5s;}
+   
+   .content li div h2.on,.content li div p.on{top: 0;opacity: 1;}
+
+   .btn{width: 100%;height: 100%;margin: 0 auto;display: flex;justify-content: center;gap: 10px;z-index: 1;}
+   .btn li{width: 54px;height: 54px;line-height:60px;text-align: center;position: relative;}
+   .btn li a{width: 100%;height: 100%;border-radius: 50%;color: #828282;position: absolute;top: -100px;}
+   .btn li a.on{background: #16873E;color: #fff;}
+   </style>
+
+</head>
+<body>
+  <div class="wrap">
+      
+      <ul class="content">
+        <li>
+            <div>
+              
+                <h1>Environment</h1>
+                <p>
+                    SK인천석유화학은 저탄소 기반 에너지 전환을 위한 사업을 새로운 성장 동력으로 추진하고 있습니다.<br>
+                    오랜 기간 정유,석유화학 분야에서 쌓아온 기술역량을 바탕으로 탄소중립을 실현하는 그린 에너지 기업으로 도약하고자 합니다.
+                </p>
+            </div>
+        </li>
+        <li>
+            <div>
+                
+                <h1>SOCIAL</h1>
+                <p>
+                    구성원, 지역사회, 협력회사 등 SK인천석유화학을 둘러싼 다양한 이해관계자의 행복을 확대하고,<br>
+                    우리사회 전반에 ESG 중심의 문화가 확산/구축될 수 있도록 노력하겠습니다.
+                </p>
+            </div>
+        </li>
+        <li>
+            <div>
+                
+                <h1>GOVERNANCE</h1>
+                <p>
+                    투명하고 선진화된 Governance 체계를 구축하고 실질적 이사회 중심 경영을 통해<br>
+                    이해관계자의 기대 수준에 부합하는 Governance 혁신을 지속해 나가겠습니다.
+                </p>
+            </div>
+        </li> 
+      </ul>
+
+      <ul class="btn">
+        <li><a href="#">E</a></li>
+        <li><a href="#">S</a></li>
+        <li><a href="#">G</a></li>
+      
+      </ul>
+
+  </div>
+<script>
+    let bg= document.querySelectorAll(".wrap");
+    let btn=document.querySelectorAll(".btn li");
+    let con=document.querySelectorAll(".content li");
+    btn[0].querySelector("a").classList.add("on")
+    con[0].classList.add("on");
+    con[0].querySelector("div h1").classList.add("on")
+    con[0].querySelector("div p").classList.add("on")
+    con.forEach(function(value,key){
+        value.style.backgroundImage="url(images/esg"+(key+1)+".gif)"
+        
+    });
+function my(){
+    btn.forEach(function(value,key){
+        value.querySelector("a").classList.remove("on");
+    })
+}
+
+    btn.forEach(function(value,key){
+        value.onclick=function(e){
+        my();
+        e.preventDefault();
+        console.log(key);
+        con.forEach(function(value,key){
+            value.classList.remove("on")
+            value.querySelector("div h1").classList.remove("on")
+            value.querySelector("div p").classList.remove("on")
+        })
+        btn[key].querySelector("a").classList.add("on");
+        con[key].classList.add("on")
+        con[key].querySelector("div h1").classList.add("on");
+        con[key].querySelector("div p").classList.add("on");
+      }
+    })
+</script>
+</body>
+</html>

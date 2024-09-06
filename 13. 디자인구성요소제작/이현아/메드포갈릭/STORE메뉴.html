@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STORE</title>
+  <style>
+    *{margin: 0;padding: 0;}
+    ul{list-style: none;}
+    .store{width: 1504px; margin: 0 auto; display: flex;}
+    .store li{position: relative;overflow: hidden;}
+    .store .text p{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); color: #fff; text-align: center;}
+    .store .text p:first-child{font-size: 45px; font-weight: bold;}
+    .store .text p:last-child{font-size: 15px; margin-top: 40px;}
+    .store li img{width: 100%; object-fit: cover; transition: 0.2s;}
+    .store li:hover img{transform: scale(1.1); transition: 0.2s;}
+  </style>
+</head>
+<body>
+    <ul class="store">
+      <li>
+          <p><img src="https://cdnt.madforgarlic.com/madforgarlic/media/web/event/201610/18/47111ab2f40f77d358f4a6c63e85836d.png" alt=""></p>
+        <div class="text">
+          <p>SEARCH</p>
+          <p>매드포갈릭 매장 찾기</p>
+        </div>
+      </li>
+      <li>
+          <p><img src="https://cdnt.madforgarlic.com/madforgarlic/media/web/event/201610/18/2c32239dae448f6e3dfed815151b731b.png" alt=""></p>
+        <div class="text">
+          <p>CONCEPT</p>
+          <p>매드포갈릭 컨셉 이미지</p>
+        </div>
+      </li>
+    </ul>
+</body>
+</html>

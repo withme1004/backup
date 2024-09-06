@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OUR PRODUCTS</title>
+  <style>
+    *{margin: 0;padding: 0;}
+    ul{list-style: none;}
+    p{color: #d1a050 ;}
+    .wrap{width: 1210px; margin: 50px auto;}
+    .wrap > p{font-size: 42px; margin-bottom: 20px;}
+    .wrap > p:first-child{font-weight: bold;}
+    .wrap ul li{width: 100%; cursor: pointer;}
+    .wrap ul li .txt{font-size: 24px; border-top: 1px solid #d1a050; padding: 20px;}
+    .wrap ul li .txt.on{font-weight: bold;}
+    .wrap ul li .txt::before{content: "+"; left: 0; top: 0;}
+    .wrap ul li .txt::before.on{transform: rotateY(-45deg);}
+    .wrap ul li.cheese{width: 100%; padding: 30px; background-repeat: no-repeat; background-position: center; background-size: cover;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p>RETALE</p>
+    <p>Slices - Almond Base</p>
+    <ul>
+      <li>
+        <p class="txt"> AMERICAN</p>
+        <div class="cheese"></div>
+      </li>
+      <li>
+        <p class="txt"> CHEDDAR</p>
+        <div class="cheese"></div>
+      </li>
+      <li>
+        <p class="txt"> PROVOLONE</p>
+        <div class="cheese"></div>
+      </li>
+      <li>
+        <p class="txt"> PEPPER JACK</p>
+        <div class="cheese"></div>
+      </li>
+    </ul>
+  </div>
+  <script>
+    let btn = document.querySelectorAll(".wrap ul li");
+    let cheese = document.querySelectorAll(".cheese");
+    cheese.forEach(function(v,k){
+      v.querySelector(".cheese").style.backgroundImage = "url(./images/SLICES-ALMONDBASE0"+(key+1)+".jpg)";
+    });
+    btn.forEach(function(v,k){
+      v.onclick=function(e){
+        e.preventDefault();
+        v.querySelector(".txt").classList.remove("on");
+        v.querySelector(".txt::before").classList.remove("on");
+      }
+    })
+
+    // let btn = document.querySelectorAll(".wrap ul li");
+    // let cheese = "url(./images/SLICES-ALMONDBASE-01.jpg)";
+    // btn[0].querySelector(".wrap ul li").classList.add("on");
+    // document.querySelector(".cheese").style.backgroundImage = cheese;
+    // function my(){
+    //   btn.forEach(function(v,k){
+    //     v.querySelector(".wrap ul li").classList.remove("on");
+    //   });
+    // }
+
+    // btn.forEach(function(v,k){
+    //   v.querySelector(".wrap ul li").onclick = function(){
+    //     e.preventDefault();
+    //     my();
+    //     console.log(k);
+    //     btn[k].querySelector(".wrap ul li").classList.add("on");
+    //     document.querySelector(".cheese").style.backgroundImage = cheese.replace(cheese.slice(-4,-3) , k+1);
+    //   };
+    // });
+  </script>
+</body>
+</html>

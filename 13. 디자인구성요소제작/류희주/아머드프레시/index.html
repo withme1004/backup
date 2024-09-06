@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        ul{list-style: none;}
+        .wrap{
+            width: 1260px;
+            height: 1000px;
+            margin: 10px auto;
+            color: #d1a050;
+        }
+        .wrap>h1,
+        .wrap>p
+        {
+            font-size: 42px;
+        }
+        .wrap>h1{
+            margin-bottom: 10px;
+        }
+        .wrap>p{
+            font-weight: 500;
+        }
+        ul.list{
+            width: 100%;
+            max-width: 1260px;
+            margin: 20px auto;
+        }
+        ul.list .title{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            cursor: pointer;
+            border-top: 1px solid;
+            padding: 15px 20px;
+        }
+        ul.list .title h2{
+            font-size: 24px;
+            font-weight: 400;
+        }
+        ul.list .title span{
+            position: relative;
+            width: 13px;
+            height: 13px;
+            display: block;
+            overflow: hidden;
+            transition: 0.5s;
+        }
+        ul.list .title span::before,
+        ul.list .title span::after{
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            background: #d1a050;
+            transition: 0.1s;
+            transform: translate(-50%,-50%);
+        }
+        ul.list .title span::before{
+            width: 100%;
+            height: 2px;
+            background: #d1a050;
+        }
+        ul.list .title span::after{
+            width: 2px;
+            height: 100%;
+        }
+        ul.list .title span.on{
+            transform: rotate(45deg);
+        }
+        ul.list .contents{
+            height: 0;
+            overflow: hidden;
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        ul.list .contents.on{
+            height: 300px;
+        }
+        ul.list .contents img{
+            width: 1130px;
+            object-fit: cover;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h1>RETAIL</h1>
+        <p>Slices - Almond Base</p>
+        <ul class="list">
+            <li>
+                <div class="title">
+                    <span></span>
+                    <h2>AMERICAN</h2>
+                </div>
+                <div class="contents">
+                    <p><img src="https://d29wx3mrk1ysd0.cloudfront.net/_img/sub231114/SLICES-ALMONDBASE-AMERICAN-pc.jpg" alt="AMERICAN"></p>
+                </div>
+            </li>
+            <li>
+                <div class="title">
+                    <span></span>
+                    <h2>CHEDDAR</h2>
+                </div>
+                <div class="contents">
+                    <p><img src="https://d29wx3mrk1ysd0.cloudfront.net/_img/sub231114/SLICES-ALMONDBASE-CHEDDAR-pc.jpg" alt="CHEDDAR"></p>
+                </div>
+            </li>
+            <li>
+                <div class="title">
+                    <span></span>
+                    <h2>PROVOLONE</h2>
+                </div>
+                <div class="contents">
+                    <p><img src="https://d29wx3mrk1ysd0.cloudfront.net/_img/sub231114/SLICES-ALMONDBASE-PROVOLONE-pc.jpg" alt="PROVOLONE"></p>
+                </div>
+            </li>
+            <li>
+                <div class="title">
+                    <span></span>
+                    <h2>PEPPER JACK</h2>
+                </div>
+                <div class="contents">
+                    <p><img src="https://d29wx3mrk1ysd0.cloudfront.net/_img/sub231114/SLICES-ALMONDBASE-PEPPERJACK-pc.jpg" alt="PEPPERJACK"></p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script>
+        let listItem = document.querySelectorAll(".list li");
+
+        function myfnc(){
+            let bool = this.querySelector("span").classList.contains("on");
+            console.log(bool)
+            listItem.forEach(function(v,k){
+            v.querySelector("span").classList.remove("on");
+            v.querySelector(".contents").classList.remove("on");
+            v.querySelector(".contents p").classList.remove("on");
+            })
+            if(!bool){
+                this.querySelector("span").classList.add("on");
+                this.querySelector(".contents").classList.add("on");
+                this.querySelector(".contents p").classList.add("on");
+            }
+            }
+
+        listItem.forEach(function(v,k){
+            v.onclick=myfnc;
+        })
+    </script>
+</body>
+</html>

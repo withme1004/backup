@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        ul{list-style: none;}
+        a{text-decoration: none;color: #FFF;}
+        
+        div{width: 80%;display: flex;margin: 30px auto;justify-content: center;gap: 15px;}
+        div p{font-size: 11px;color: #a8a9ad;position: relative;}
+        div p::after{content: "";height: 1px;width: 50px;background: #a8a9ad;position: absolute;bottom: -27px;left: 0;opacity: 0;}
+        ul{max-width: 1857px;width: 80%;display: flex;margin: 0 auto;height: 80vh;justify-content: center;}
+        ul li{flex: 1 1 45%;align-content: center;text-align: center;background-repeat: no-repeat;background-position: center;background-size: 100%;transition: 0.5s;}
+        
+        ul li.search{background-image: url(https://cdnt.madforgarlic.com/madforgarlic/media/web/event/201610/18/47111ab2f40f77d358f4a6c63e85836d.png);}
+        ul li.concept{background-image: url(https://cdnt.madforgarlic.com/madforgarlic/media/web/event/201610/18/2c32239dae448f6e3dfed815151b731b.png);}
+        ul li h1{font-size: 45px;}
+        ul li p{font-size: 15px;}
+
+        ul li:hover{background-size: 120%;}
+        div p:hover::after{opacity: 1;}
+    </style>
+</head>
+<body>
+    <div>
+        <p>SEARCH</p>
+        <p>CONCEPT</p>
+    </div>
+   <ul>
+    <li class="search">
+        <a href="#">
+        <h1>SEARCH</h1>
+        <p>매드포갈릭 매장찾기</p>
+    </a>
+    </li>
+    <li class="concept">
+        <a href="#">
+        <h1>CONCEPT</h1>
+        <p>매드포갈릭 컨셉 이미지</p>
+    </a>
+    </li>
+   </ul> 
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="xeicon.css">
+  <style>
+    @font-face {
+      font-family: archivo700;
+      src: url(webfonts/archivo-v18-latin-700.woff2) format("woff2");
+    }
+    @font-face {
+      font-family: archivoR;
+      src: url(webfonts/archivo-v18-latin-regular.woff2) format("woff2");
+    }
+    *{margin: 0; padding: 0;}
+    ul{list-style: none;}
+    #wrap{width: 100%; max-width: 1260px; margin: 0 auto; color: #d1a050;}
+    #wrap h1{font-size: 42px; text-transform: uppercase; margin-bottom: 20px; font-family: archivo700;}
+    #wrap h2{font-size: 42px; margin-bottom: 20px; text-transform: capitalize; font-family: archivoR;}
+
+    #wrap .list{}
+    #wrap .list > li{border-top: 1px solid #d1a050; cursor: pointer;}
+    #wrap .list > li p{text-transform: uppercase; font-size: 24px; padding: 15px 20px 15px 40px;
+      position: relative; font-family: archivoR;}
+    #wrap .list > li p.on{font-weight: bold;}
+    #wrap .list > li p::before{
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: url(images/plus.svg);
+      left: 15px; 
+      top: 17px;
+      background-position: center;
+      transition: 0.5s;
+    }
+    #wrap .list > li p.on::before{
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: url(images/plus.svg);
+      left: 15px; 
+      top: 17px;
+      background-position: center;
+      transform: rotate(45deg);
+    }
+    #wrap .list > li ul li{height: 0; transition: 0.5s;}
+    #wrap .list > li ul li.on{height: 450px;}
+    #wrap .list > li ul li img{width: 100%; height: 100%; padding: 70px 40px 80px; object-fit: cover; 
+      box-sizing: border-box;}
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <h1>retail</h1>
+    <h2>slices - almond base</h2>
+      <ul class="list">
+        <li>
+          <p>american</p>
+          <ul>
+            <li>
+              <img src="images/SLICES-ALMONDBASE-AMERICAN-pc.jpg" alt="american">
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>cheddar</p>
+          <ul>
+            <li>
+              <img src="images/SLICES-ALMONDBASE-CHEDDAR-pc.jpg" alt="cheddar">
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>provolone</p>
+          <ul>
+            <li>
+              <img src="images/SLICES-ALMONDBASE-PROVOLONE-pc.jpg" alt="provolone">
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>pepper jack</p>
+          <ul>
+            <li>
+              <img src="images/SLICES-ALMONDBASE-PEPPERJACK-pc.jpg" alt="pepperJack">
+            </li>
+          </ul>
+        </li>
+      </ul>
+  </div>
+
+  <script>
+    let btn = document.querySelectorAll("#wrap .list > li");
+
+    btn.forEach(function(v,k){
+      v.onclick = function(){
+        btn[k].querySelector("#wrap .list > li ul li").classList.toggle("on");
+        btn[k].querySelector("#wrap .list > li p").classList.toggle("on");
+      }
+    });
+  </script>
+</body>
+</html>
